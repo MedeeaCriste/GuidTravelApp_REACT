@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './Components/Navbar.tsx';
+import NavbarDsktop from './Components/NavbarDsktop.tsx';
+import Content from './Components/Content.tsx';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Navbar/>
+     <div className="hidden sm:block"><NavbarDsktop/></div>
+     <Content/>
     </div>
   );
 }
