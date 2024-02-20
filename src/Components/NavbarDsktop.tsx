@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 export default function NavbarDesktop() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,8 +12,8 @@ export default function NavbarDesktop() {
       <div className=' flex justify-between items-center gap-5'>
         <img className='w-[150px] xl:w-[200px] ' src="/Assets/logotext.png" alt="logo" />
         <div className='flex gap-4 justify-center items-center'>
-          <button className='border-2 border-[#1D267D] rounded-md p-[4px] text-[#1D267D] xl:text-xl font-semibold '><a href=""></a>Rezerve a ticket</button>
-          <button className='bg-[#1D267D] xl:text-xl p-[4px] w-28 font-semibold rounded-md text-white'><a href=""></a>About us</button>
+          <button className='border-2 border-[#1D267D] rounded-md p-[4px] text-[#1D267D] xl:text-xl font-semibold '><a href="/ticket">Rezerve a ticket</a></button>
+          <button className='bg-[#1D267D] xl:text-xl p-[4px] w-28 font-semibold rounded-md text-white'><a href="#aboutus">About us</a></button>
           <div className='flex justify-center items-center'>
             <a className='text-[#1D267D] xl:text-xl font-semibold' href="">Where do you wanna go?</a>
             {isOpen ? (
@@ -33,9 +33,9 @@ export default function NavbarDesktop() {
       {isOpen && (
         <div className="bg-[#1D267D] absolute right-8 mt-[-16px]  p-4 rounded-md w-[28%] lg:w-[21%] xl:w-[17%] text-md font-semibold float-end ">
           <ul className="space-y-2 ">
-            <li className=' p-2'><a href="#" className="text-white ">To the mountains</a></li>
-            <li className=' p-2'><a href="#" className="text-white ">To the sea</a></li>
-            <li className=' p-2'><a href="#" className="text-white ">To the forest</a></li>
+            <li className=' p-2'><a href="/montain" className="text-white ">To the mountains</a></li>
+            <li className=' p-2'><a href="/sea" className="text-white ">To the sea</a></li>
+            <li className=' p-2'><a href="/forest" className="text-white ">To the forest</a></li>
           </ul>
         </div>
       )}

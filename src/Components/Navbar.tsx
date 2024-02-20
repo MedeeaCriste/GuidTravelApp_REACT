@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -24,10 +24,10 @@ export default function Navbar() {
             {isOpen && (
                 <div className="md:hidden bg-white p-4 mt-4 text-md font-semibold ">
                     <ul className="space-y-2 ">
-                        <li className='w-[100%] border-b-[1px] p-2'><a href="#" className="text-[#1D267D]  ">Rezerve a ticket</a></li>
-                        <li className='w-[100%] border-b-[1px] p-2'><a href="#" className="text-[#1D267D]  ">About us</a></li>
-                        <li className='w-[100%] border-b-[1px] p-2'><a href="#" className="text-[#1D267D] ">Where do you wanna go?</a></li>
-
+                        <li className='w-[100%] border-b-[1px] p-2'><a href="/ticket" className="text-[#1D267D]  ">Rezerve a ticket</a></li>
+                        <li className='w-[100%] border-b-[1px] p-2'><a href="#aboutus" className="text-[#1D267D]  ">About us</a></li>
+                        <li className='w-[100%] border-b-[1px] p-2'><a href="#cards" className="text-[#1D267D] ">Where do you wanna go?</a></li>
+                        
                     </ul>
                 </div>
             )}
