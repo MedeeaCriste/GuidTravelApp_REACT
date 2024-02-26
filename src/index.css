@@ -9,4 +9,13 @@
     .hidden {
       display: none;
     }
+    .slider-container {
+    
+      margin: 0 auto; /* Aliniaza containerul pe centru */
+    }
+    
+    .slick-slider {
+      margin: 0 auto;
+      width: 100%; /* Asigură ca slider-ul să aibă lățimea întreagă a containerului */
+    }
   }
