@@ -12,7 +12,7 @@ export default function NavbarDesktop() {
       <div className=' flex justify-between items-center gap-5'>
         <img className='w-[150px] xl:w-[200px] ' src="/Assets/logotext.png" alt="logo" />
         <div className='flex gap-4 justify-center items-center'>
-          <button className='border-2 border-[#1D267D] rounded-md p-[4px] text-[#1D267D] xl:text-xl font-semibold '><a href="/ticket">Rezerve a ticket</a></button>
+          <button className='border-2 border-[#1D267D] rounded-md p-[6px] text-[#1D267D] xl:text-xl font-semibold '><a href="/ticket">Rezerve a ticket</a></button>
           <button className='bg-[#1D267D] xl:text-xl p-[4px] w-28 font-semibold rounded-md text-white'><a href="#aboutus">About us</a></button>
           <div className='flex justify-center items-center'>
             <a className='text-[#1D267D] xl:text-xl font-semibold' href="">Where do you wanna go?</a>
