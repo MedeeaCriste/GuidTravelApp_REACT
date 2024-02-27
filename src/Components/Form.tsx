@@ -21,7 +21,7 @@ export default function Form() { const [formData, setFormData] = useState({
   return (
     <div className="container mx-auto ">
     
-      <form className='flex flex-col justify-center items-center gap-4 lg:gap-10 2xl:gap-14 mt-4 lg:text-xl 2xl:text-2xl text-lg text-[#1D267D] '>
+      <form action="https://getform.io/f/6dBxgWa7" method="POST" className='flex flex-col justify-center items-center gap-4 lg:gap-10 2xl:gap-14 mt-4 lg:text-xl 2xl:text-2xl text-lg text-[#1D267D] '>
         <div className="input-group w-[250px] lg:w-[350px] lg:text-left border-b-[1px] 2xl:w-[500px] border-[#D4ADFC]">
           <label htmlFor="nume"></label>
           <input type="text" id="nume" name="nume" placeholder='First Name' value={formData.nume} onChange={handleChange} required />
@@ -36,7 +36,7 @@ export default function Form() { const [formData, setFormData] = useState({
         </div>
         <div className="input-group w-[250px] lg:w-[350px] lg:text-left border-b-[1px] 2xl:w-[500px] border-[#D4ADFC]">
           <label htmlFor="Phone"></label>
-          <input type="Phone" placeholder='Phone Number' id="nr" name="nr" value={formData.number} onChange={handleChange} required />
+          <input type="tel" placeholder='Phone Number' id="number" name="number" value={formData.number} onChange={handleChange} required />
         </div>
         <div className="input-group flex flex-col justify-start gap-2 items-start lg:gap-6 mt-4 ">
           <label htmlFor="destinatie" className='text-2xl'>Where do you want to go ?</label>
