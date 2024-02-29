@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-export default function SelectDate() {
-  const [date, changeDate] = useState(new Date());
+export default function SelectDate({changeDate}) {
+  const [date, setDate] = useState(new Date());
 
   function changeValue(val) {
-     changeDate(val);
+    setDate(val);
   }
+
+  useEffect(()=>{
+    changeDate(date);
+  },[date])
 
   return (
      <div className='w-[300px] px-4 lg:text-sm lg:w-[400px] mx-auto 2xl:w-[600px] xl:px-12  text-xs'>
@@ -18,7 +22,7 @@ export default function SelectDate() {
            maxDate = {new Date(2025, 12, 22)} // To set maximum date
            showWeekNumbers = {true} // TO show week numbers
            showNeighboringMonth = {true} 
-           calendarType = "US" // Changing the calender type
+           calendarType = "gregory" // Changing the calender type
            tileDisabled = {({ date }) => date.getDay() === 0} // Disabaling the sunday
         />
 
