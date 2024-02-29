@@ -1,11 +1,14 @@
 import React, { useState }  from 'react'
+import SelectDate from '../Components/SelectDate.tsx'
 
 export default function Form() { const [formData, setFormData] = useState({
     nume: '',
     prenume: '',
     email: '',
     number:'',
-    destinatie: 'Paris'
+    destinatie: 'Paris',
+    data1:'',
+    data2:'',
   });
 
   const handleChange = (e) => {
@@ -66,8 +69,27 @@ export default function Form() { const [formData, setFormData] = useState({
 
           </select>
         </div>
+        <div className='text-left flex  flex-col mt-4'>
+        <h1 className='px-8 2xl:px-12 xl:text-2xl mb-2'>Start date: </h1>
+        <div>
+        <label htmlFor="data1"> <SelectDate/></label>
+         
+
+        </div>
+
+        </div>
+        <div className='text-left flex  flex-col mt-4'>
+        <h1 className='px-8 2xl:px-12 xl:text-2xl mb-2'>Return date: </h1>
+        <div>
+        <label htmlFor="data2"> <SelectDate/></label>
+
+        </div>
+       
+        </div>
+        
         <button type="submit" className="btn text-white font-semibold lg:w-[250px] bg-[#1D267D] w-[150px] rounded-md p-1">Rezerve</button>
       </form>
     </div>
   );
 }
+  

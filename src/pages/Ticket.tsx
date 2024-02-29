@@ -7,6 +7,7 @@ export default function Ticket() {
     <div className='flex flex-col justify-center rounded-md items-center mt-4 container mx-auto border-[1px] p-4 shadow-md w-[300px] lg:w-[450px] 2xl:w-[600px] '>
       <h1 className='text-2xl text-[#1D267D] font-semibold lg:text-3xl xl:text-4xl lg:mb-8'>Rezerve a ticket</h1>
       <Form/>
+      
     </div>
 
     <div className='container mx-auto p-4 lg:w-[450px] xl:w-[700px] 2xl:w-[800px] mt-4'>
