@@ -12,7 +12,7 @@ export default function Content() {
         </div>
         <img className='mt-[15px] md:w-[300px] lg:w-[250px] xl:w-[480px] 2xl:w-[530px] ' src="/Assets/image1.png" alt="" />
       </div>
-      <div id='cards' className=' mt-4 p-4 md:p-8 flex flex-col gap-4 lg:flex-row '>
+      <div id='cards' className=' mt-4 p-4 md:p-8 flex justify-between items-center flex-col gap-4 lg:gap-8 lg:flex-row '>
       <Card
             srcImg={"/Assets/forest.png"}
             titlu="Let's go to the forest!"

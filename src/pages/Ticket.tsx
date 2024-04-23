@@ -3,12 +3,8 @@ import Form from '../Components/Form.tsx'
 import Ads from '../Components/Ads.tsx'
 export default function Ticket() {
   return (
-    <div className='lg:flex lg:justify-center lg:items-center p-8'>
-    <div className='flex flex-col justify-center rounded-md items-center mt-4 container mx-auto border-[1px] p-4 shadow-md w-[300px] lg:w-[450px] 2xl:w-[600px] '>
-      <h1 className='text-2xl text-[#1D267D] font-semibold lg:text-3xl xl:text-4xl lg:mb-8'>Rezerve a ticket</h1>
-      <Form/>
-      
-    </div>
+    <div className='lg:flex lg:justify-between lg:items-start p-8'>
+    
 
     <div className='container mx-auto p-4 lg:w-[450px] xl:w-[700px] 2xl:w-[800px] mt-4'>
     <h1 className='text-2xl 2xl:text-4xl font-semibold text-[#1D267D] mt-2 mb-4 xl:text-3xl'>Why should you choose us?</h1>
@@ -28,6 +24,11 @@ export default function Ticket() {
     <Ads
     titlu="Reputation and Trust"
     desc="We have a solid reputation in the industry and are known for our high-quality services. You can trust that by booking airplane tickets with our company, you will benefit from an excellent travel experience."/>
+    </div>
+    <div className='flex flex-col justify-center rounded-md items-center mt-4 container mx-auto border-[1px] p-4 shadow-md w-[300px] lg:w-[450px] 2xl:w-[600px] '>
+      <h1 className='text-2xl text-[#1D267D] font-semibold lg:text-3xl xl:text-4xl lg:mb-8'>Rezerve a ticket</h1>
+      <Form/>
+      
     </div>
 
 

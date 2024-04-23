@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from './Components/Navbar.tsx';
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavbarDsktop from './Components/NavbarDsktop.tsx';
 import Footer from './Components/Footer.tsx';
