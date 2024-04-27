@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 export default function Card({titlu,descriere,srcImg,link}) {
   return (
-    <div className="flex flex-col items-center justify-center bg-[#1D267D] rounded-md  h-[250px] sm:h-[300px] xl:h-[400px] gap-2 2xl:gap-6"> 
+    <div className="flex flex-col items-center justify-center bg-[#1D267D] rounded-md p-4 xl:max-h-[400px] gap-2 2xl:gap-6"> 
     
     <img className=' w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] p-2 lg:w-[90px] lg:h-[90px] xl:w-[120px] xl:h-[120px] ' src={srcImg} alt='' />
     <div className='flex flex-col items-start 2xl:gap-2 mt-5'>

@@ -7,13 +7,14 @@ import Sea from './pages/Sea.tsx';
 import Montain from './pages/Montain.tsx';
 import Forest from './pages/Forest.tsx';
 import Ticket from './pages/Ticket.tsx';
-
+import ScrollNavbar from './Components/ScrollNavbar.tsx';
 import Home from './pages/Home.tsx';
 function App() {
   return (
     <div className="App">
      <Navbar/>
      <div className="hidden md:block"><NavbarDsktop/></div>
+     <ScrollNavbar/>
     
     
      <BrowserRouter>
