@@ -2,6 +2,8 @@ import React from 'react'
 import Card from './Card.tsx'
 import Offers from './Offers.tsx'
 import BannerCarusel from './BannerCarusel.tsx'
+import Restaurants from './Restaurants.tsx'
+import Visit from './Visit.tsx'
 export default function Content() {
   return (
     <div>
@@ -39,6 +41,8 @@ export default function Content() {
         <Offers/>
         </div>
         <BannerCarusel/>
+        <Restaurants/>
+        <Visit/>
     </div>
   )
 }
