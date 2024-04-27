@@ -14,9 +14,9 @@ export default function NavbarDesktop() {
         </a>
         <div className='flex gap-4 justify-center items-center'>
           <button className='border-2 border-[#1D267D] rounded-md p-[6px] text-[#1D267D] xl:text-xl font-semibold '><a href="/ticket">Rezerve a ticket</a></button>
-          <button className='bg-[#1D267D] xl:text-xl p-[4px] w-28 font-semibold rounded-md text-white'><a href="#aboutus">About us</a></button>
+          <button className='bg-[#1D267D] xl:text-xl p-[4px] w-28 font-semibold rounded-md text-white'><a href="/#aboutus">About us</a></button>
           <div className='flex justify-center items-center'>
-            <a className='text-[#1D267D] xl:text-xl font-semibold' href="">Where do you wanna go?</a>
+            <a className='text-[#1D267D] xl:text-xl font-semibold' href="/#cards">Where do you wanna go?</a>
             {isOpen ? (
               <svg onClick={toggleMenu} className='w-[15px] text-[#1D267D]' fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
