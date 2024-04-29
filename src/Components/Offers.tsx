@@ -9,12 +9,12 @@ export default function Offers() {
         <p className='text-left lg:text-lg'>With our 15 years of industry experience, over 18,000 real reviews from our tourists, our reliability, excellent hotels in our portfolio, and the amazing deals we prepare for you each year, we confidently recommend ourselves. <br /> Our consultants maintain constant communication with you, providing all the information you need both before and after bookin</p>
         </div>
         <div className='grid justify-between grid-cols-1 gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3'>
-        <a href="/" className="bg-[url('/public/Assets/ofertaPaste.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Easter 2024 Deals"/></a>
-        <a href="/" className="bg-[url('/public/Assets/ofertaRevelion.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="New Year's Eve 2025 Offers"/></a>
-        <a href="/" className="bg-[url('/public/Assets/ofertaCraciun.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Christmas 2024 Deals"/></a>
-        <a href="/" className="bg-[url('/public/Assets/ofertaVara.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Summer 2024 Season Offers"/></a>
-        <a href="/" className="bg-[url('/public/Assets/ofertaSky.webp')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Ski Season 2025 Offers"/></a>
-        <a href="/" className="bg-[url('/public/Assets/ofertaRecomandari.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Recommendations from Us"/></a>
+        <a href="/easteroffers" className="bg-[url('/public/Assets/ofertaPaste.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Easter 2024 Deals"/></a>
+        <a href="/newyearseveoffers" className="bg-[url('/public/Assets/ofertaRevelion.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="New Year's Eve 2025 Offers"/></a>
+        <a href="/christmasoffers" className="bg-[url('/public/Assets/ofertaCraciun.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Christmas 2024 Deals"/></a>
+        <a href="/summeroffers" className="bg-[url('/public/Assets/ofertaVara.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Summer 2024 Season Offers"/></a>
+        <a href="/skioffers" className="bg-[url('/public/Assets/ofertaSky.webp')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Ski Season 2025 Offers"/></a>
+        <a href="/recommendationsoffers" className="bg-[url('/public/Assets/ofertaRecomandari.jpg')] bg-cover hover:opacity-80 rounded-md"><OfferCard title="Recommendations from Us"/></a>
         </div>
     </div>
   )
