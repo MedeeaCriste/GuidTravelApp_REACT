@@ -30,7 +30,7 @@ export default function Carusel({sImg,title,desc}) {
       return (
         <div className='lg:flex lg:flex-col lg:justify-start lg:items-start lg:container lg:mx-auto mt-4 '>
             <h1 className='lg:p-8 font-semibold text-[#1D267D] text-xl lg:text-2xl'>{title}</h1>
-        <div className='p-8 slider-container lg:w-[95%] xl:w-[70%]'>
+        <div className='p-8 slider-container lg:max-w-[100%] xl:max-w-[70%]'>
    
         <Slider {...settings} >
             { sImg.map((element, i)=>{
@@ -48,7 +48,7 @@ function SliderElement({imgS, imgAlt}){
 
     return (
         <div className='px-4 xl:px-8'>
-            <img className='w-[100%] h-[400px] xl:w-[300px] xl:h-[350px] lg:w-[370px] lg:h-[200px] object-cover' src={imgS} alt={imgAlt} />
+            <img className='w-[100%] h-[400px] lg:max-w-[800px] lg:max-h-[350px] object-cover' src={imgS} alt={imgAlt} />
         </div>
     )
 }
