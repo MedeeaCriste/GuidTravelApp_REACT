@@ -21,11 +21,12 @@ const ScrollNavbar = () => {
   return (
     <div>
       {isVisible && (
-        <div className="w-full z-50 bg-[#1D267D] fixed top-0 mx-auto p-2 pb-6 hidden lg:block ">
-             <ul className="text-white flex justify-center gap-16 text-xl items-center py-4">
-                        <li className='p-2'><a href="/ticket">Rezerve a ticket</a></li>
+        <div className="w-full z-50 bg-[#1D267D] fixed top-0 hidden lg:block ">
+             <ul className="text-white shadow-md flex justify-start gap-16 text-xl items-center lg:p-8 p-4 container mx-auto">
                         <a href="/"><img className='w-[120px] bg-white py-2 rounded-md shadow-lg px-4' src="/Assets/logotext.png" alt="logo" /></a>
-                        <li className='p-2'><a href="#aboutus">About us</a></li>
+                        <li><a href="/ticket">Rezerve a ticket</a></li>
+                        <li><a href="#aboutus">About us</a></li>
+                        <li><a href="/#cards" className="text-white">Where do you wanna go?</a></li>
                     </ul>
         </div>
       )}

@@ -1,7 +1,13 @@
 import React from 'react'
-
+import OffersDetails from '../Components/OffersDetails.tsx'
 export default function EasterOffers() {
   return (
-    <div>EasterOffers</div>
+    <div className='container mx-auto p-4 lg:p-8'>
+      <p className='font-bold text-3xl lg:text-4xl text-left text-[#1D267D]'>Best Easter offers! Here's what you can look forward to:</p>
+      <OffersDetails srcImg={"/Assets/Everest1.jpg"} title="Mount Everest" details="Picture this: Easter morning, surrounded by the majestic peaks of the Himalayas, the crisp mountain air filling your lungs as you embark on a once-in-a-lifetime adventure in the Everest region. Our team has meticulously crafted an exclusive Easter experience that combines the thrill of exploration with the serenity of the world's highest mountains." date="3/05/2024-13/05/2024" price="2 Persons: max price 1500$"/>
+      <OffersDetails srcImg={"/Assets/Caraibe1.jpg"} title="Caribbean Islands" details="With Easter just around the corner, I'm thrilled to extend to you an invitation for an extraordinary holiday experience in the stunning Caribbean Isles. Imagine waking up to the gentle sound of waves lapping against the shore, surrounded by palm-fringed beaches and azure waters that stretch as far as the eye can see. Our team has curated an exclusive Easter escape that promises relaxation, adventure, and unparalleled luxury in one of the most beautiful destinations on earth." date="2/05/2024-9/05/2024" price="2 Persons: max price 2000$"/>
+      <OffersDetails srcImg={"/Assets/Yaku1.jpg"} title="Yakushima Forest" details="As Easter approaches, I'm excited to introduce you to an extraordinary opportunity for a truly unique holiday experience amidst the mystical beauty of Yakushima Forest. Nestled off the southern coast of Japan, Yakushima is a UNESCO World Heritage site renowned for its ancient cedar trees, lush greenery, and unparalleled natural splendor. Our team has curated an exclusive Easter retreat that promises to immerse you in the wonders of this enchanting island paradise." date="2/05/2024-11/05/2024" price="2 Persons: max price 800$"/>
+      <OffersDetails srcImg={"/Assets/Colorada2.jpg"} title="Laguna Colorada" details="With Easter fast approaching, I'm thrilled to present you with an exclusive opportunity to embark on an unforgettable journey to the mesmerizing Laguna Colorada. Tucked away in the remote landscapes of Bolivia, Laguna Colorada is a breathtaking salt lake renowned for its vibrant hues, striking landscapes, and unique wildlife. Our team has crafted a tailor-made Easter expedition that promises to immerse you in the natural wonders and cultural richness of this extraordinary destination." date="4/05/2024-14/05/2024" price="2 Persons: max price 1000$"/>
+    </div>
   )
 }
